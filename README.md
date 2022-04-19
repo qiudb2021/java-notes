@@ -221,6 +221,34 @@ eg:
         >> 按位右位移（相当于除以2的位移次幂）
         >>> 按位右位移(无符号)（不考虑符号，直接移位）
         ```
-   1. 
-
+## Java语法结构 - 流程控制
+1. 顺序结构
+   1. 分支结构
+        ```java
+        if(boolean) { // 单分支
+            // 语句块1;
+        } else if(boolean) {
+            // 语句块2;
+        } else {
+            // 语句块3;
+        }
+        ```
+        ```java
+        switch // 多分支
+        ```
+   2. 循环结构
+        ```java
+        for
+        while
+        do...while
+        ``` 
+   3. 
+## Java - 输入输出
+### Scanner类
+```java
+// eg:从键盘输入一个数字
+import java.util.Scanner;
+Scanner input = new Scanner(System.in);
+int x = input.nextInt();
+```
             
