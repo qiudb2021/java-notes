@@ -234,7 +234,16 @@ eg:
         }
         ```
         ```java
-        switch // 多分支
+        switch(/*int/byte/short char enum(1.5) String(1.7)*/) {
+            case /*值1*/:
+                /*代码1*/
+                break;
+            case /*值2*/:
+                /*代码2*/
+                break;
+            default:
+                /*代码*/
+        } // 多分支
         ```
    2. 循环结构
         ```java
@@ -243,12 +252,3 @@ eg:
         do...while
         ``` 
    3. 
-## Java - 输入输出
-### Scanner类
-```java
-// eg:从键盘输入一个数字
-import java.util.Scanner;
-Scanner input = new Scanner(System.in);
-int x = input.nextInt();
-```
-            
