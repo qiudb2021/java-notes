@@ -4,13 +4,21 @@
 2. Java语言公司 SUN Standford University NetWork ---> SUN Microsystems
 3. Java语言的几个重大事件
    1995 正式发布
+   
    1996 正式发布了可以下载的JDK工具包 JDK1.0
+   
    1999 发布第二代Java平台 简称Java2 细化三个不同的版本
+
     标准版  Standard Edition    J2SE
+
     企业版  Enterprise Edition  J2EE
+
     微型版  Micro Edition   J2ME
+
    2004 JDK1.5版本  添加了很多新的特性  Java5
+
    2005 Java6版本
+
    2009 Oracle公司收购SUN
 ## JVM(Java Virtual Machine) java虚拟机
  源文件.java -> 字节码.class
