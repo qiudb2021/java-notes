@@ -28,6 +28,20 @@ JRE包含JVM
 JDK包含JRE
 ## 配置环境变量
 ![图1](images/1.png "配置环境变量")
+## main
+```java
+public static void main(String[] args) {
+
+}
+// public 访问权限修饰符 公有的
+// static 特征修饰符--静态的（有且只有一份）
+// void 方法执行完后没有返回值
+// main 方法名字
+
+// 主方法中的args参数是否可以传参数
+// 1. 主方法是由JVM虚拟机启动的时候调用的
+// 2. 方法里面的args参数是一个String[]引用类型，可以传递参数到JVM
+```
 ## 数据类型
 ### 8个基本类型
 4个整型：
