@@ -33,5 +33,10 @@ public String name;
    3. 参数的顺序
 3. 动态参数列表
    ```java
-   int ...x; // 类型固定，个数不固定[0...n], 本质上是一个数组int[] x;
+   public void test(int ...x); // √ 类型固定，个数不固定[0...n], 本质上是一个数组int[] x;但不能与int[] x构成重载
+   public void test(int a, int ...x); // √
+   public void test(int[] x); // ×；与第1个冲突
    ```
+   动态参数列表(```int ..x```)不能与```int[] x```不能构成重载。这两个本质上都是数组。
+
+   区别：动态参数列表的方法，可以不传参数(相当于空数组)；数组的方法必须传递参数
