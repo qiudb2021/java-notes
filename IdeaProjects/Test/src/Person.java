@@ -1,21 +1,5 @@
-public class Person {
-    public String name;
-    public int age;
-    public String sex;
-
-    public void eat(String food) {
-        System.out.println(this.name + " eating " + food);
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public String getSex() {
-        return sex;
+public class Person extends Animal {
+    public Person() {
+        System.out.println("person中的无参数构造方法。");
     }
 }
