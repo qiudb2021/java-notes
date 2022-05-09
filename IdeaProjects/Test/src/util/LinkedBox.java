@@ -1,6 +1,6 @@
 package util;
 
-public class LinkedBox implements Box {
+public class LinkedBox extends AbstractBox {
     // 头节点
     private Node first;
     // 尾节点
@@ -22,17 +22,16 @@ public class LinkedBox implements Box {
 
     @Override
     public int get(int index) {
-        this.rangetCheck(index);
+        this.rangeCheck(index);
         Node target = this.getNode(index);
         return target.item;
     }
 
     @Override
     public int remove(int index) {
-        this.rangetCheck(index);
+        this.rangeCheck(index);
         Node target = this.getNode(index);
-        int oldValue = this.unlink(target);
-        return oldValue;
+        return this.unlink(target);
     }
 
     @Override
@@ -54,7 +53,7 @@ public class LinkedBox implements Box {
         this.size++;
     }
 
-    private void rangetCheck(int index) {
+    private void rangeCheck(int index) {
         if (index > this.size) {
             throw new BoxIndexOutOfBoundsException("");
         }

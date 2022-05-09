@@ -1,6 +1,6 @@
 package util;
 
-public class ArrayBox implements Box{
+public class ArrayBox extends AbstractBox{
     private static final int DEFAULT_CAPACITY = 10;
     private int[] elementData;
     private int size = 0; // 记录当前元素个数
