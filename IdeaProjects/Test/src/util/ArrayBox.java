@@ -1,4 +1,6 @@
-public class ArrayBox {
+package util;
+
+public class ArrayBox implements Box{
     private static final int DEFAULT_CAPACITY = 10;
     private int[] elementData;
     private int size = 0; // 记录当前元素个数
@@ -8,7 +10,6 @@ public class ArrayBox {
     }
     public ArrayBox(int capacity) {
         this.elementData = new int[capacity];
-
     }
     public int[] getElementData() {
         return elementData;
@@ -32,7 +33,7 @@ public class ArrayBox {
     public int remove(int index) {
         this.rangeCheck(index);
         int oldValue = this.elementData[index];
-        for (int i = 0; i < this.size - 1; i++) {
+        for (int i = index; i < this.size - 1; i++) {
             this.elementData[i] = this.elementData[i + 1];
         }
         this.elementData[--this.size] = 0;
@@ -68,7 +69,7 @@ public class ArrayBox {
 
     protected void rangeCheck(int index) {
         if (index < 0 || index >= this.size) {
-            throw new ArrayBoxIndexOutOfBoundsException("Index: " + index + ", Size: " + this.size);
+            throw new BoxIndexOutOfBoundsException("Index: " + index + ", Size: " + this.size);
         }
     }
 }

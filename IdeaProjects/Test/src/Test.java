@@ -2,7 +2,7 @@ public class Test {
 //    public static void main(String[] args) {
 //        System.out.println("This is a Test Project.");
 //
-//        ArrayBox arrayBox = new ArrayBox(15);
+//        util.ArrayBox arrayBox = new util.ArrayBox(15);
 //        System.out.println("length " + arrayBox.getElementData().length);
 //        System.out.println("size " + arrayBox.getSize());
 //        for (int i = 0; i < 20; i++) {
