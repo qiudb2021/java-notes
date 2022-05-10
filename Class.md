@@ -300,6 +300,49 @@ Java源代码中看到native就已经再也看不见后续代码
 ### 继承
 ### 封装
 ### 多态
+**同一个对象体现出来的多种不同的形态(身份)，将一种行为表现出不同的效果**
+
+想要实现多态的效果，需要有继承关系
+```java
+ public class Person {
+      String name;
+
+      public void eat() {}
+      public void sleep(){}
+      public void talk(){}
+   }
+
+   public class Teacher extends Person {
+      String name;
+      public void teach() {}
+   }
+```
+1. 父类类型的引用指向子类的对象
+   ```java
+   Person p = new Teacher();
+   ```
+2. 该引用只能调用父类的定义的属性或方法
+   ```java
+   p.eat(); // √
+   p.sleep(); // √
+   p.talk(); // √
+   p.teach(); // ×
+   ```
+3. 如果子类将父类的方法重写，那么调用的方法为子类重写的方法
+   ```java
+   p.eat(); // √ 子类的eat
+   p.sleep(); // √ 子类的eat
+   p.talk(); // √ 子类的eat
+   p.teach(); // ×
+   ```
+5. 如果子类的属性与父类的属性重复，则调用的父类的属性
+   ```java
+   p.name; // 父类的name
+   ```
+6. 若想调用子类中的独有成员函数，需要强制转换成Person类型
+   ```java
+   Teacher t = (Teacher)p;
+   ```
 ### 抽象
 ## 类的加载顺序
 1. 加载父类类模板
