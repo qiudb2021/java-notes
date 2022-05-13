@@ -360,3 +360,81 @@ Java源代码中看到native就已经再也看不见后续代码
 9.  执行块、子类构造方法
 10. 将对象空间的地址引用交给变量来存储
 ![](images/13.png)
+## 内部类
+指的是在Java中可以将一个类定义在另一个类的内部
+
+内部类可以定义在**类的内部（与类的成员一致）**
+
+内部类可以定义在**方法/块内部**（成类的成员相差一个层次，与方法的局部变量一个层次）
+
+### 成员内部类
+将一个类直接定义在类的里面，作为成员，与属性/方法层次一致
+
+成员内部类可以与正常类一样，使用不同的修饰符来修饰
+
+1. 省略了一个.java文件
+2. 成员内部类中可以访问外部内的所有成员（包括私有的）
+   
+内部类中通过对象.调用外部类成员：**外部类.this.外部类成员**
+
+内部类存在后，源代码编译产生一个字节码(eg: Demo$InnerDemo.class)
+
+### 局部内部类
+将一个类定义在方法/块里面，作为成员的内部结构，与临时的局部变量一个层次
+
+局部内部类像是一个局部的变量一样，不能用```public/protected/private/static```修饰，只能用```abstract/final```
+
+局部内部类命名规则: ```Demo$1InnerTestMethod/Demo$2InnerTestMethod```
+
+局部内部类使用的变量只能是```final```修饰
+### 匿名内部类
+1. 成员匿名内部类
+2. 局部匿名内部类
+```java
+public interface Test {
+   public void test();
+}
+
+public class Son implements Test {
+   public void test() {
+
+   }
+}
+
+Test t = new Son();
+t.test();
+
+// 匿名内部类
+Test t = new Test() {
+   public void test() {
+
+   }
+}
+```
+匿名类通常是接口或抽象类的具体子类这样写
+
+开发中为了省略一个类文件，上述写法比较觉
+
+匿名内部类很特殊，只有类体，没有类的所有的结构(修饰符、名字、继承、实现)
+
+不能用任意修饰符来修饰，匿名内部类也没有构造函数
+
+### 静态内部类
+1. 成员静态内部类
+   不需要外部类对象，通过正常方式直接创建内部类
+   ```java
+   public class Demo {
+      private String name = "我是外部类属性"
+
+      public class InnerDemo {
+         private String name = "我是内部类的属性"
+      }
+
+      public static class InnerDemoStatic {
+
+      }
+   }
+
+   // 使用
+   InnerDemoStatic ids = new InnerDemoStatic();
+   ```
