@@ -1,4 +1,7 @@
 # String
+## String
+## StringBuilder
+## StringBuffer
 ## 方法
 ### equals
 ```java

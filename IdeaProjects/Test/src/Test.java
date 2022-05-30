@@ -1,3 +1,5 @@
+import java.util.Calendar;
+
 public class Test {
 //    public static void main(String[] args) {
 //        System.out.println("This is a Test Project.");
@@ -23,6 +25,18 @@ public class Test {
 //
 //    }
     public static void main(String[] args) {
-        Person p = new Person();
+        Calendar calendar = Calendar.getInstance();
+        Calendar calendar1 = Calendar.getInstance();
+
+        System.out.println(calendar);
+        System.out.println(calendar.after(calendar1)); // false;
+        System.out.println(calendar.equals(calendar1)); // false
+        System.out.println(calendar.before(calendar1)); // true
+        System.out.println(calendar.get(Calendar.YEAR)); // 2022
+        System.out.println(calendar.get(Calendar.DAY_OF_MONTH)); // 30
+
+        calendar.set(Calendar.YEAR, 2021);
+        System.out.println(calendar.get(Calendar.YEAR)); // 2021
+
     }
 }
