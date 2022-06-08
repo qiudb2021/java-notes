@@ -45,3 +45,30 @@
   
 ![](images/netty/1-3.png)
 
+### 2. ByteBuffer
+```ByteBuffer```有以下重要属性
+* capacity
+* position
+* limit
+  
+初始时
+
+![](images/netty/2-1.png)
+
+写模式下，```position```是写入位置，```limit```等于```capacity```
+
+![](images/netty/2-2.png)
+
+```flip```动作发生后，```positon```切换为读取位置，```limit```切换为读取限制
+![](images/netty/2-3.png)
+
+```clear```动作发生后
+
+![](images/netty/2-3.png)
+
+```compact```方法，是把未读的部分向前压缩，然后切换到写模式
+
+![](images/netty/2-4.png)
+
+
+  
