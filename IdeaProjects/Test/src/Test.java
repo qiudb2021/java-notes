@@ -1,4 +1,5 @@
 import java.util.Calendar;
+import java.util.TimeZone;
 
 public class Test {
 //    public static void main(String[] args) {
@@ -35,8 +36,11 @@ public class Test {
         System.out.println(calendar.get(Calendar.YEAR)); // 2022
         System.out.println(calendar.get(Calendar.DAY_OF_MONTH)); // 30
 
-        calendar.set(Calendar.YEAR, 2021);
-        System.out.println(calendar.get(Calendar.YEAR)); // 2021
+//        calendar.set(Calendar.YEAR, 2021);
+//        System.out.println(calendar.get(Calendar.YEAR)); // 2021
 
+        TimeZone tz = calendar.getTimeZone();
+        System.out.println(tz.getID()); // Asia/Shanghai
+        System.out.println(tz.getDisplayName()); // 中国标准时间
     }
 }
