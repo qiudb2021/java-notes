@@ -47,7 +47,7 @@
       <recent name="G:\learn\java-notes\IdeaProjects\netty-demo\src\test\java\cn\itcast\netty\c1" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.TestFileChannelTransferTo">
+  <component name="RunManager" selected="应用程序.TestFilesWalkFileTree">
     <configuration name="TestByteBufferExam" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c1.TestByteBufferExam" />
       <module name="netty-demo" />
@@ -61,8 +61,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestByteBufferString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c1.TestByteBufferString" />
+    <configuration name="TestFileChannelTransferTo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c1.TestFileChannelTransferTo" />
       <module name="netty-demo" />
       <extension name="coverage">
         <pattern>
@@ -74,8 +74,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestFileChannelTransferTo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c1.TestFileChannelTransferTo" />
+    <configuration name="TestFilesWalkFileTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c1.TestFilesWalkFileTree" />
       <module name="netty-demo" />
       <extension name="coverage">
         <pattern>
@@ -115,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.TestFilesWalkFileTree" />
         <item itemvalue="应用程序.TestFileChannelTransferTo" />
         <item itemvalue="应用程序.TestByteBufferExam" />
         <item itemvalue="应用程序.TestGatheringWrites" />
         <item itemvalue="应用程序.TestScatteringReads" />
-        <item itemvalue="应用程序.TestByteBufferString" />
       </list>
     </recent_temporary>
   </component>
