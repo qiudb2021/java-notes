@@ -65,6 +65,7 @@
 ```clear```动作发生后
 
 ![](images/netty/2-3.png)
+![](images/netty/2-4.png)
 
 ```compact```方法，是把未读的部分向前压缩，然后切换到写模式
 
