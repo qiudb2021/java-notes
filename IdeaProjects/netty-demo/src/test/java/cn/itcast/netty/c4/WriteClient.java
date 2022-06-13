@@ -2,14 +2,21 @@ package cn.itcast.netty.c4;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
+import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
-import java.nio.charset.StandardCharsets;
 
-public class Client {
+public class WriteClient {
     public static void main(String[] args) throws IOException {
         SocketChannel sc = SocketChannel.open();
         sc.connect(new InetSocketAddress("localhost", 8080));
-        sc.write(StandardCharsets.UTF_8.encode("0123456789abcdefghijklmnopqrstuvwxyz\n"));
-        System.in.read();
+
+        // 接收数据
+        int count = 0;
+        ByteBuffer buffer = ByteBuffer.allocate(1024 * 1024);
+        while (true) {
+            count += sc.read(buffer);
+            System.out.println(count);
+            buffer.clear();
+        }
     }
 }

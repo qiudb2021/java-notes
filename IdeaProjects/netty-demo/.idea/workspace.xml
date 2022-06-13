@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c940d840-9a3e-49af-92e1-2f67b00125b1" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Server7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Server7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,33 +49,7 @@
       <recent name="G:\learn\java-notes\IdeaProjects\netty-demo\src\test\java\cn\itcast\netty\c1" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.cn.itcast.netty.c4.Client">
-    <configuration name="Server4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c4.Server4" />
-      <module name="netty-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.itcast.netty.c4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Server5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c4.Server5" />
-      <module name="netty-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.itcast.netty.c4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="应用程序.WriteClient">
     <configuration name="Server6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c4.Server6" />
       <module name="netty-demo" />
@@ -101,6 +76,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WriteClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c4.WriteClient" />
+      <module name="netty-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itcast.netty.c4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WriteServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c4.WriteServer" />
+      <module name="netty-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itcast.netty.c4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="cn.itcast.netty.c4.Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c4.Client" />
       <module name="netty-demo" />
@@ -115,19 +116,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.Server4" />
-      <item itemvalue="应用程序.Server5" />
       <item itemvalue="应用程序.Server6" />
       <item itemvalue="应用程序.Server7" />
+      <item itemvalue="应用程序.WriteClient" />
+      <item itemvalue="应用程序.WriteServer" />
       <item itemvalue="应用程序.cn.itcast.netty.c4.Client" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.WriteClient" />
+        <item itemvalue="应用程序.WriteServer" />
         <item itemvalue="应用程序.cn.itcast.netty.c4.Client" />
         <item itemvalue="应用程序.Server7" />
         <item itemvalue="应用程序.Server6" />
-        <item itemvalue="应用程序.Server5" />
-        <item itemvalue="应用程序.Server4" />
       </list>
     </recent_temporary>
   </component>
@@ -156,11 +157,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Client.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Server.java</url>
           <line>17</line>
