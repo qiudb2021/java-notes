@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c940d840-9a3e-49af-92e1-2f67b00125b1" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Server7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Server7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +49,9 @@
       <recent name="G:\learn\java-notes\IdeaProjects\netty-demo\src\test\java\cn\itcast\netty\c1" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.WriteClient">
-    <configuration name="Server6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c4.Server6" />
+  <component name="RunManager" selected="应用程序.cn.itcast.netty.c4.Client">
+    <configuration name="MultiThreadServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c4.MultiThreadServer" />
       <module name="netty-demo" />
       <extension name="coverage">
         <pattern>
@@ -116,7 +116,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.Server6" />
+      <item itemvalue="应用程序.MultiThreadServer" />
       <item itemvalue="应用程序.Server7" />
       <item itemvalue="应用程序.WriteClient" />
       <item itemvalue="应用程序.WriteServer" />
@@ -124,11 +124,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.cn.itcast.netty.c4.Client" />
+        <item itemvalue="应用程序.MultiThreadServer" />
         <item itemvalue="应用程序.WriteClient" />
         <item itemvalue="应用程序.WriteServer" />
-        <item itemvalue="应用程序.cn.itcast.netty.c4.Client" />
         <item itemvalue="应用程序.Server7" />
-        <item itemvalue="应用程序.Server6" />
       </list>
     </recent_temporary>
   </component>
@@ -161,6 +161,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Server.java</url>
           <line>17</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Client.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
