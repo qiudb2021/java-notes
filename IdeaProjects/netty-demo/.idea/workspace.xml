@@ -6,27 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c940d840-9a3e-49af-92e1-2f67b00125b1" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c1/ByteBufferUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c1/ByteBufferUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c1/TestByteBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c1/TestByteBuffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c1/TestByteBufferAllocate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c1/TestByteBufferAllocate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c1/TestByteBufferExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c1/TestByteBufferExam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c1/TestByteBufferReadWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c1/TestByteBufferReadWrite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c1/TestByteBufferString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c1/TestByteBufferString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c1/TestFileChannelTransferTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c1/TestFileChannelTransferTo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c1/TestFilesWalkFileTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c1/TestFilesWalkFileTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c1/TestGatheringWrites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c1/TestGatheringWrites.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c1/TestScatteringReads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c1/TestScatteringReads.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c4/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/MultiThreadServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c4/MultiThreadServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c4/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Server2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c4/Server2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Server3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c4/Server3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Server4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c4/Server4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Server5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c4/Server5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Server6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c4/Server6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/Server7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c4/Server7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/WriteClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c4/WriteClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/WriteServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/nio/c4/WriteServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +47,7 @@
       <recent name="G:\learn\java-notes\IdeaProjects\netty-demo\src\test\java\cn\itcast\netty\c1" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.HelloClient">
+  <component name="RunManager" selected="应用程序.TestEventLoop">
     <configuration name="HelloClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c1.HelloClient" />
       <module name="netty-demo" />
@@ -108,12 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WriteClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c4.WriteClient" />
+    <configuration name="TestEventLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c3.TestEventLoop" />
       <module name="netty-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.itcast.netty.c4.*" />
+          <option name="PATTERN" value="cn.itcast.netty.c3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,19 +114,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="应用程序.TestEventLoop" />
       <item itemvalue="应用程序.HelloClient" />
       <item itemvalue="应用程序.HelloServer" />
       <item itemvalue="应用程序.MultiThreadServer" />
-      <item itemvalue="应用程序.WriteClient" />
       <item itemvalue="应用程序.cn.itcast.netty.c4.Client" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.TestEventLoop" />
         <item itemvalue="应用程序.HelloClient" />
         <item itemvalue="应用程序.HelloServer" />
         <item itemvalue="应用程序.cn.itcast.netty.c4.Client" />
         <item itemvalue="应用程序.MultiThreadServer" />
-        <item itemvalue="应用程序.WriteClient" />
       </list>
     </recent_temporary>
   </component>
@@ -185,6 +164,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/cn/itcast/nio/c4/Client.java</url>
           <line>22</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/cn/itcast/netty/c3/TestEventLoop.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
