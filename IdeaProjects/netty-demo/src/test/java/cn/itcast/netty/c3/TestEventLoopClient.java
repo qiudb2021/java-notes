@@ -13,6 +13,7 @@ public class TestEventLoopClient {
     public static void main(String[] args) throws InterruptedException {
         Channel channel = new Bootstrap()
                 .group(new NioEventLoopGroup())
+//                .group(new NioEventLoopGroup())
                 .channel(NioSocketChannel.class)
                 .handler(new ChannelInitializer<NioSocketChannel>() {
                     @Override
