@@ -1,24 +1,22 @@
-package cn.itcast.netty.c1;
+package cn.itcast.nio.c1;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
-
-import static cn.itcast.netty.c1.ByteBufferUtil.debugAll;
 
 public class TestByteBufferString {
     public static void main(String[] args) {
         // 1. 字符串转为 ByteBuffer
         ByteBuffer buffer = ByteBuffer.allocate(16);
         buffer.put("hello".getBytes(StandardCharsets.UTF_8));
-        debugAll(buffer);
+        ByteBufferUtil.debugAll(buffer);
 
         // 2. Charset
         ByteBuffer buffer2 = StandardCharsets.UTF_8.encode("中国");
-        debugAll(buffer2);
+        ByteBufferUtil.debugAll(buffer2);
 
         // 3. wrap
         ByteBuffer buffer3 = ByteBuffer.wrap("中国".getBytes());
-        debugAll(buffer3);
+        ByteBufferUtil.debugAll(buffer3);
 
         buffer.flip();
         System.out.println(StandardCharsets.UTF_8.decode(buffer).toString());
@@ -57,7 +55,7 @@ public class TestByteBufferString {
 
             // get(i) 不会改变 position 的索引位置
             System.out.println((char) buffer.get(3));
-            debugAll(buffer); // position不会变（还是0）
+            ByteBufferUtil.debugAll(buffer); // position不会变（还是0）
         }
     }
 }

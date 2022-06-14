@@ -1,4 +1,4 @@
-package cn.itcast.netty.c4;
+package cn.itcast.nio.c4;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -11,10 +11,10 @@ import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 
-import static cn.itcast.netty.c1.ByteBufferUtil.debugRead;
+import static cn.itcast.nio.c1.ByteBufferUtil.debugRead;
 
 @Slf4j
-public class Server5 {
+public class Server6 {
     public static void main(String[] args) throws IOException {
         // 1. 创建selector，管理多个 channel
         Selector selector = Selector.open();
@@ -60,11 +60,23 @@ public class Server5 {
                     scKey.interestOps(SelectionKey.OP_READ);
                     log.debug("{}", sc);
                 } else if (key.isReadable()) {
-                    SocketChannel channel = (SocketChannel) key.channel();
-                    ByteBuffer buffer = ByteBuffer.allocate(1024);
-                    channel.read(buffer);
-                    buffer.flip();
-                    debugRead(buffer);
+                    try {
+                        SocketChannel channel = (SocketChannel) key.channel(); // 拿到触发事件的channel
+                        ByteBuffer buffer = ByteBuffer.allocate(1024);
+                        int read = channel.read(buffer); // 如果是正常断开，read方法返回值 -1
+                        if (read == -1) {
+                            log.debug("客户端正常断开");
+                            key.cancel();
+                        } else {
+                            buffer.flip();
+                            debugRead(buffer);
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                        // 因为客户端断开了，因此需要将key取消（从selector的keys集合中真正删除key）
+                        key.cancel();
+                        log.debug("客户端异常断开");
+                    }
                 }
             }
         }

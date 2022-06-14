@@ -1,8 +1,6 @@
-package cn.itcast.netty.c1;
+package cn.itcast.nio.c1;
 
 import java.nio.ByteBuffer;
-
-import static cn.itcast.netty.c1.ByteBufferUtil.debugAll;
 
 public class TestByteBufferExam {
     public static void main(String[] args) {
@@ -20,7 +18,7 @@ public class TestByteBufferExam {
 
         ByteBuffer source = ByteBuffer.allocate(32);
         source.put("Hello,World\nI'm zhangsan\nHo".getBytes());
-        debugAll(source);
+        ByteBufferUtil.debugAll(source);
 
         split(source);
         source.put("w are you?\n".getBytes());
@@ -40,7 +38,7 @@ public class TestByteBufferExam {
                     target.put(source.get());
                 }
                 target.flip();
-                debugAll(target);
+                ByteBufferUtil.debugAll(target);
             }
         }
         source.compact();

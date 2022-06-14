@@ -1,20 +1,17 @@
-package cn.itcast.netty.c4;
+package cn.itcast.nio.c4;
 
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
-import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 
-import static cn.itcast.netty.c1.ByteBufferUtil.debugRead;
-
 @Slf4j
-public class Server6 {
+public class Server4 {
     public static void main(String[] args) throws IOException {
         // 1. 创建selector，管理多个 channel
         Selector selector = Selector.open();
@@ -48,36 +45,11 @@ public class Server6 {
             Iterator<SelectionKey> iter = selector.selectedKeys().iterator();
             while (iter.hasNext()) {
                 SelectionKey key = iter.next();
-                // 处理key时，要从selectedKey 集合中移除，否则下次处理就会有问题
-                iter.remove();
                 log.debug("key: {}", key);
-
-                if (key.isAcceptable()) {
-                    ServerSocketChannel channel = (ServerSocketChannel) key.channel();
-                    SocketChannel sc = channel.accept();
-                    sc.configureBlocking(false);
-                    SelectionKey scKey = sc.register(selector, 0, null);
-                    scKey.interestOps(SelectionKey.OP_READ);
-                    log.debug("{}", sc);
-                } else if (key.isReadable()) {
-                    try {
-                        SocketChannel channel = (SocketChannel) key.channel(); // 拿到触发事件的channel
-                        ByteBuffer buffer = ByteBuffer.allocate(1024);
-                        int read = channel.read(buffer); // 如果是正常断开，read方法返回值 -1
-                        if (read == -1) {
-                            log.debug("客户端正常断开");
-                            key.cancel();
-                        } else {
-                            buffer.flip();
-                            debugRead(buffer);
-                        }
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                        // 因为客户端断开了，因此需要将key取消（从selector的keys集合中真正删除key）
-                        key.cancel();
-                        log.debug("客户端异常断开");
-                    }
-                }
+//                ServerSocketChannel channel = (ServerSocketChannel) key.channel();
+//                SocketChannel sc = channel.accept();
+//                log.debug("{}", sc);
+                key.cancel();
             }
         }
     }
