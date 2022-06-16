@@ -91,7 +91,7 @@ public class TestEventLoopClient {
                 })
                 // 1. 连接到服务器
                 // connect 异步非阻塞，main发起了调用，真正执行 connect 的是 nio 线程
-                .connect(new InetSocketAddress("localhost", 8080));
+                .connect(new InetSocketAddress("localhost", 8081));
 
         channelFuture.sync();
 
