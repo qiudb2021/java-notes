@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c940d840-9a3e-49af-92e1-2f67b00125b1" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/TestByteBuf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/TestByteBuf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/TestComposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/c4/TestComposite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,7 @@
       <recent name="G:\learn\java-notes\IdeaProjects\netty-demo\src\test\java\cn\itcast\netty\c1" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.TestSlice">
+  <component name="RunManager" selected="应用程序.TestComposite">
     <configuration name="TestByteBuf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c4.TestByteBuf" />
       <module name="netty-demo" />
@@ -62,12 +61,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestEventLoopClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c3.TestEventLoopClient" />
+    <configuration name="TestComposite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c4.TestComposite" />
       <module name="netty-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.itcast.netty.c3.*" />
+          <option name="PATTERN" value="cn.itcast.netty.c4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,8 +74,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestEventLoopServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c3.TestEventLoopServer" />
+    <configuration name="TestEventLoopClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c3.TestEventLoopClient" />
       <module name="netty-demo" />
       <extension name="coverage">
         <pattern>
@@ -116,18 +115,18 @@
     </configuration>
     <list>
       <item itemvalue="应用程序.TestByteBuf" />
+      <item itemvalue="应用程序.TestComposite" />
       <item itemvalue="应用程序.TestSlice" />
       <item itemvalue="应用程序.TestPineline" />
       <item itemvalue="应用程序.TestEventLoopClient" />
-      <item itemvalue="应用程序.TestEventLoopServer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.TestComposite" />
         <item itemvalue="应用程序.TestSlice" />
         <item itemvalue="应用程序.TestByteBuf" />
         <item itemvalue="应用程序.TestEventLoopClient" />
         <item itemvalue="应用程序.TestPineline" />
-        <item itemvalue="应用程序.TestEventLoopServer" />
       </list>
     </recent_temporary>
   </component>
