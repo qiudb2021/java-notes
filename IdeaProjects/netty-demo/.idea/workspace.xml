@@ -47,7 +47,7 @@
       <recent name="G:\learn\java-notes\IdeaProjects\netty-demo\src\test\java\cn\itcast\netty\c1" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.HelloWorldClient">
+  <component name="RunManager" selected="应用程序.client2">
     <configuration name="HelloWorldClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c5.HelloWorldClient" />
       <module name="netty-demo" />
@@ -74,12 +74,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestByteBuf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c4.TestByteBuf" />
+    <configuration name="Server2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c5.Server2" />
       <module name="netty-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.itcast.netty.c4.*" />
+          <option name="PATTERN" value="cn.itcast.netty.c5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSlice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c4.TestSlice" />
+    <configuration name="client2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c5.client2" />
       <module name="netty-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.itcast.netty.c4.*" />
+          <option name="PATTERN" value="cn.itcast.netty.c5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,17 +116,17 @@
     <list>
       <item itemvalue="应用程序.HelloWorldClient" />
       <item itemvalue="应用程序.HelloWorldServer" />
-      <item itemvalue="应用程序.TestByteBuf" />
+      <item itemvalue="应用程序.Server2" />
       <item itemvalue="应用程序.TestComposite" />
-      <item itemvalue="应用程序.TestSlice" />
+      <item itemvalue="应用程序.client2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.HelloWorldClient" />
+        <item itemvalue="应用程序.client2" />
         <item itemvalue="应用程序.HelloWorldServer" />
+        <item itemvalue="应用程序.Server2" />
+        <item itemvalue="应用程序.HelloWorldClient" />
         <item itemvalue="应用程序.TestComposite" />
-        <item itemvalue="应用程序.TestSlice" />
-        <item itemvalue="应用程序.TestByteBuf" />
       </list>
     </recent_temporary>
   </component>
