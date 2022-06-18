@@ -47,7 +47,7 @@
       <recent name="G:\learn\java-notes\IdeaProjects\netty-demo\src\test\java\cn\itcast\netty\c1" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.client3">
+  <component name="RunManager" selected="应用程序.TestLengthFileDecoder">
     <configuration name="HelloWorldServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c5.HelloWorldServer" />
       <module name="netty-demo" />
@@ -61,8 +61,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c5.Server2" />
+    <configuration name="TestLengthFileDecoder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c5.TestLengthFileDecoder" />
       <module name="netty-demo" />
       <extension name="coverage">
         <pattern>
@@ -115,18 +115,18 @@
     </configuration>
     <list>
       <item itemvalue="应用程序.HelloWorldServer" />
-      <item itemvalue="应用程序.Server2" />
+      <item itemvalue="应用程序.TestLengthFileDecoder" />
       <item itemvalue="应用程序.client2" />
       <item itemvalue="应用程序.client3" />
       <item itemvalue="应用程序.server3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.TestLengthFileDecoder" />
         <item itemvalue="应用程序.client3" />
         <item itemvalue="应用程序.server3" />
         <item itemvalue="应用程序.client2" />
         <item itemvalue="应用程序.HelloWorldServer" />
-        <item itemvalue="应用程序.Server2" />
       </list>
     </recent_temporary>
   </component>
