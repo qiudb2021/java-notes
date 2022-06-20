@@ -7,11 +7,6 @@
     <list default="true" id="c940d840-9a3e-49af-92e1-2f67b00125b1" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/client/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/client/ChatClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/AbstractResponseMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/AbstractResponseMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/LoginRequestMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/LoginRequestMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/LoginResponseMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/LoginResponseMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/protocol/TestMessageCodec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/protocol/TestMessageCodec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/server/ChatServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
