@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c940d840-9a3e-49af-92e1-2f67b00125b1" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/client/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/client/ChatClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/AbstractResponseMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/AbstractResponseMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/LoginRequestMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/LoginRequestMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/LoginResponseMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/LoginResponseMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/protocol/TestMessageCodec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/protocol/TestMessageCodec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/server/ChatServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,13 +54,13 @@
       <recent name="G:\learn\java-notes\IdeaProjects\netty-demo\src\test\java\cn\itcast\netty\c1" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.cn.itcast.netty.chat.server.ChatServer">
-    <configuration name="TestHttp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c5.TestHttp" />
+  <component name="RunManager" selected="应用程序.ChatClient">
+    <configuration name="ChatClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.chat.client.ChatClient" />
       <module name="netty-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.itcast.netty.c5.*" />
+          <option name="PATTERN" value="cn.itcast.netty.chat.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -62,8 +68,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestLengthFileDecoder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c5.TestLengthFileDecoder" />
+    <configuration name="TestHttp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c5.TestHttp" />
       <module name="netty-demo" />
       <extension name="coverage">
         <pattern>
@@ -115,19 +121,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="应用程序.ChatClient" />
       <item itemvalue="应用程序.cn.itcast.netty.chat.server.ChatServer" />
       <item itemvalue="应用程序.TestMessageCodec" />
       <item itemvalue="应用程序.TestHttp" />
-      <item itemvalue="应用程序.TestLengthFileDecoder" />
       <item itemvalue="应用程序.TestRedis" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.ChatClient" />
         <item itemvalue="应用程序.cn.itcast.netty.chat.server.ChatServer" />
         <item itemvalue="应用程序.TestMessageCodec" />
         <item itemvalue="应用程序.TestHttp" />
         <item itemvalue="应用程序.TestRedis" />
-        <item itemvalue="应用程序.TestLengthFileDecoder" />
       </list>
     </recent_temporary>
   </component>

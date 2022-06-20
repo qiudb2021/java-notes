@@ -17,7 +17,7 @@ public class TestMessageCodec {
         );
 
         // encode
-        LoginRequestMessage message = new LoginRequestMessage("zhangsan", "123", "张三");
+        LoginRequestMessage message = new LoginRequestMessage("zhangsan", "123");
         channel.writeOneOutbound(message);
 
         // decode
