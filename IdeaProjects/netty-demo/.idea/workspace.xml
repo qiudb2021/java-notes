@@ -15,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -47,7 +48,7 @@
       <recent name="G:\learn\java-notes\IdeaProjects\netty-demo\src\test\java\cn\itcast\netty\c1" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.TestMessageCodec">
+  <component name="RunManager" selected="应用程序.cn.itcast.netty.chat.server.ChatServer">
     <configuration name="TestHttp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c5.TestHttp" />
       <module name="netty-demo" />
@@ -100,12 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="client3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.c5.client3" />
+    <configuration name="cn.itcast.netty.chat.server.ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.netty.chat.server.ChatServer" />
       <module name="netty-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.itcast.netty.c5.*" />
+          <option name="PATTERN" value="cn.itcast.netty.chat.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,19 +115,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="应用程序.cn.itcast.netty.chat.server.ChatServer" />
       <item itemvalue="应用程序.TestMessageCodec" />
       <item itemvalue="应用程序.TestHttp" />
       <item itemvalue="应用程序.TestLengthFileDecoder" />
       <item itemvalue="应用程序.TestRedis" />
-      <item itemvalue="应用程序.client3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.cn.itcast.netty.chat.server.ChatServer" />
         <item itemvalue="应用程序.TestMessageCodec" />
         <item itemvalue="应用程序.TestHttp" />
         <item itemvalue="应用程序.TestRedis" />
         <item itemvalue="应用程序.TestLengthFileDecoder" />
-        <item itemvalue="应用程序.client3" />
       </list>
     </recent_temporary>
   </component>
