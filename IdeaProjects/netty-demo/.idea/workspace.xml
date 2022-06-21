@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c940d840-9a3e-49af-92e1-2f67b00125b1" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/ChatRequestMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/client/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/client/ChatClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/ChatResquestMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/GroupChatRequestMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/GroupChatRequestMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/GroupCreateRequestMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/GroupCreateRequestMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/GroupJoinRequestMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/GroupJoinRequestMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/GroupMemberRequestMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/GroupMemberRequestMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/GroupQuitRequestMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/message/GroupQuitRequestMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/server/session/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/server/session/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/server/session/GroupSessionMemoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/itcast/netty/chat/server/session/GroupSessionMemoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
