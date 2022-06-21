@@ -5,22 +5,22 @@ import lombok.ToString;
 
 @Data
 @ToString(callSuper = true)
-public class GroupChatRequestMessage extends Message {
+public class ChatRequestMessage extends Message{
     private String content;
-    private String groupName;
+    private String to;
     private String from;
 
-    public GroupChatRequestMessage() {
+    public ChatRequestMessage() {
     }
 
-    public GroupChatRequestMessage(String from, String groupName, String content) {
+    public ChatRequestMessage(String from, String to, String content) {
         this.content = content;
-        this.groupName = groupName;
+        this.to = to;
         this.from = from;
     }
 
     @Override
     public int getMessageType() {
-        return GroupChatRequestMessage;
+        return ChatRequestMessage;
     }
 }

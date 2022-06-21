@@ -1,7 +1,6 @@
 package cn.itcast.netty.chat.client;
 
-import cn.itcast.netty.chat.message.LoginRequestMessage;
-import cn.itcast.netty.chat.message.LoginResponseMessage;
+import cn.itcast.netty.chat.message.*;
 import cn.itcast.netty.chat.protocol.MessageCodecSharable;
 import cn.itcast.netty.chat.protocol.ProcotolFrameDecoder;
 import io.netty.bootstrap.Bootstrap;
@@ -16,12 +15,16 @@ import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 @Slf4j
 public class ChatClient {
+    public static String username;
     public static void main(String[] args) {
         NioEventLoopGroup worker = new NioEventLoopGroup();
         LoggingHandler LOGGING_HANDLER = new LoggingHandler(LogLevel.DEBUG);
@@ -46,7 +49,7 @@ public class ChatClient {
                             new Thread(() -> {
                                 Scanner scanner = new Scanner(System.in);
                                 System.out.println("请输入用户名: ");
-                                String username = scanner.nextLine();
+                                username = scanner.nextLine();
                                 System.out.println("请输入密码: ");
                                 String password = scanner.nextLine();
 
@@ -76,7 +79,11 @@ public class ChatClient {
                                     System.out.println("gquit [group name]");
                                     System.out.println("quit");
                                     System.out.println("========================================================");
+
+                                    String command = scanner.nextLine();
+                                    send(ctx, command);
                                 }
+
                             }, "system in").start();
                             super.channelActive(ctx);
                         }
@@ -104,6 +111,36 @@ public class ChatClient {
             log.error("client serror ", e);
         } finally {
             worker.shutdownGracefully();
+        }
+    }
+
+    public static void send(ChannelHandlerContext ctx, String command) {
+        String[] s = command.split(" ");
+
+        switch (s[0]) {
+            case "send":
+                ctx.writeAndFlush(new ChatRequestMessage(username, s[1], s[2]));
+                break;
+            case "gsend":
+                ctx.writeAndFlush(new GroupChatRequestMessage(username, s[1], s[2]));
+                break;
+            case "gcreate":
+                Set<String> set = new HashSet<>(Arrays.asList((s[2]).split(",")));
+                set.add(username); // 加入自己
+                ctx.writeAndFlush(new GroupCreateRequestMessage(s[1], set));
+                break;
+            case "gmembers":
+                ctx.writeAndFlush(new GroupMemberRequestMessage(s[1]));
+                break;
+            case "gjion":
+                ctx.writeAndFlush(new GroupJoinRequestMessage(username, s[1]));
+                break;
+            case "gquit":
+                ctx.writeAndFlush(new GroupQuitRequestMessage(username, s[1]));
+                break;
+            case "quit":
+                ctx.channel().close();
+                return;
         }
     }
 }
